@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main (){
+    
+    int multiplier;
+    int factorial = 1;
+    int i;
+
+    printf("Hello, please enter in a number to find the factorial of that number less than 100:   \n");
+    scanf("%d", &multiplier);
+
+    for(i = multiplier; i>0; i--){
+        factorial = factorial * i;
+    }
+    
+    printf("Here is the factorial of %d:    %d\n", multiplier, factorial);
+    
+    return 0;
+
+}
